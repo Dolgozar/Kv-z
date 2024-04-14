@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Dolgozat"
+    "\\Dolgozat",
+    "\\Dolgozat\\Dolgozat"
   ],
-  "SelectedNode": "\\Dolgozat\\Dolgozat.sln",
+  "SelectedNode": "\\Dolgozat\\Dolgozat\\MainWindow.xaml.cs",
   "PreviewInSolutionExplorer": false
 }

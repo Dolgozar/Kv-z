@@ -17,7 +17,7 @@
                 </Style>
             </Button.Resources>
         </Button>
-        <Button x:Name="kozepes"  Background="Wheat" BorderThickness="2" BorderBrush="Black" FontSize="20" Content="Közepes" Height="52" Width="176" Canvas.Left="312" Canvas.Top="182" HorizontalAlignment="Center" VerticalAlignment="Top">
+        <Button x:Name="kozepes"  Background="Wheat" BorderThickness="2" BorderBrush="Black" FontSize="20" Content="Közepes" Height="52" Width="176" Canvas.Left="312" Canvas.Top="182" HorizontalAlignment="Center" VerticalAlignment="Top" Click="kozepes_Click">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="30"/>
@@ -31,12 +31,41 @@
                 </Style>
             </Button.Resources>
         </Button>
-        <Button x:Name="next_button"  Background="DarkGoldenrod" BorderThickness="2" BorderBrush="Black" FontSize="20" Content="Tovább" Height="52" Width="176" Click="Start_Click" HorizontalAlignment="Center" Canvas.Left="312" Canvas.Top="182" VerticalAlignment="Top">
+        <Button x:Name="next_button"  Background="DarkGoldenrod" BorderThickness="2" BorderBrush="Black" FontSize="20" Content="Start" Height="52" Width="176" Click="Start_Click" HorizontalAlignment="Left" Canvas.Left="312" Canvas.Top="182" VerticalAlignment="Center">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="30"/>
                 </Style>
             </Button.Resources>
         </Button>
+        <Button x:Name="option1" Background="DarkGray" Click="option1_Click" BorderThickness="2" BorderBrush="Black" FontSize="20" Content="" Height="52" Width="176" Visibility="Hidden" Canvas.Left="169" Canvas.Top="182" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="30"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="option2"  Background="DarkGray" BorderThickness="2" BorderBrush="Black" FontSize="20" Content="" Height="52" Width="176" Visibility="Hidden" Canvas.Left="455" Canvas.Top="182" HorizontalAlignment="Left" VerticalAlignment="Center" Click="option2_Click">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="30"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="option4"  Background="DarkGray" BorderThickness="2" BorderBrush="Black" FontSize="20" Content="" Height="52" Width="176" Visibility="Hidden" Canvas.Left="455" Canvas.Top="281" HorizontalAlignment="Center" VerticalAlignment="Top">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="30"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="option3"  Background="DarkGray" BorderThickness="2" BorderBrush="Black" FontSize="20" Content="" Height="52" Width="176" Visibility="Hidden" Canvas.Left="169" Canvas.Top="281" HorizontalAlignment="Center" VerticalAlignment="Top">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="30"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Label x:Name="reply_label" Visibility="Visible" Content="" FontWeight="Black" Canvas.Left="312" Canvas.Top="149" HorizontalContentAlignment="Center" Width="176" HorizontalAlignment="Center" VerticalAlignment="Top"/>
     </Canvas>
 </Window>
