@@ -223,6 +223,7 @@ namespace Dolgozat
             else
             {
                 score--;
+                option1.Visibility = Visibility.Hidden;
                 lbl_score.Content = "Pontszám: " + score;
                 reply_label.Content = "Rossz Válasz!";
                 reply_label.Foreground = Brushes.Red;
@@ -247,7 +248,8 @@ namespace Dolgozat
             else
             {
                 score--;
-                lbl_score.Content = "Pontszám: " + score;
+				option2.Visibility = Visibility.Hidden;
+				lbl_score.Content = "Pontszám: " + score;
                 reply_label.Content = "Rossz Válasz!";
                 reply_label.Foreground = Brushes.Red;
                 reply_label.Visibility = Visibility.Visible;
@@ -270,6 +272,7 @@ namespace Dolgozat
             else
             {
                 score--;
+                option3.Visibility = Visibility.Hidden;
                 lbl_score.Content = "Pontszám: " + score;
                 reply_label.Content = "Rossz Válasz!";
                 reply_label.Foreground = Brushes.Red;
@@ -293,7 +296,8 @@ namespace Dolgozat
             else
             {
                 score--;
-                lbl_score.Content = "Pontszám: " + score;
+				option4.Visibility = Visibility.Hidden;
+				lbl_score.Content = "Pontszám: " + score;
                 reply_label.Content = "Rossz Válasz!";
                 reply_label.Foreground = Brushes.Red;
                 reply_label.Visibility = Visibility.Visible;
@@ -316,7 +320,7 @@ namespace Dolgozat
             option4.IsEnabled = true;
         }
 
-        private void pages(int page_count)
+        private void easy_pages(int page_count)
         {
             /*if (page_count == 2)
             {
@@ -418,10 +422,11 @@ namespace Dolgozat
         private void nextpage_btn_Click(object sender, RoutedEventArgs e)
         {
             page_count++;
+            show_opts();
             reply_label.Visibility = Visibility.Hidden;
             nextpage_btn.Visibility = Visibility.Hidden;
             enable_buttons();
-            pages(page_count);
+            easy_pages(page_count);
            
 
 

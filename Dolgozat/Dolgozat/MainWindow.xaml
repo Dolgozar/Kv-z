@@ -8,73 +8,73 @@
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen"
         Title="Kvíz" Height="450" Width="800">
-    <Canvas>
-        <Label x:Name="title" Content="Üdv a kvíz játékunkban!" FontSize="35" Canvas.Top="10" Foreground="Black" Background="DarkGray" Padding="10" BorderBrush="Black" HorizontalContentAlignment="Center" Width="800"/>
-        <Button x:Name="nehez"  Background="DarkRed" BorderThickness="2" BorderBrush="Black" FontSize="20" Content="Nehéz" Height="52" Width="176" Canvas.Left="312" Canvas.Top="122" HorizontalAlignment="Center" VerticalAlignment="Top" Click="nehez_Click">
-            <Button.Resources>
-                <Style TargetType="{x:Type Border}">
-                    <Setter Property="CornerRadius" Value="30"/>
-                </Style>
-            </Button.Resources>
-        </Button>
-        <Button x:Name="kozepes"  Background="Wheat" BorderThickness="2" BorderBrush="Black" FontSize="20" Content="Közepes" Height="52" Width="176" Canvas.Left="312" Canvas.Top="182" HorizontalAlignment="Center" VerticalAlignment="Top" Click="kozepes_Click">
-            <Button.Resources>
-                <Style TargetType="{x:Type Border}">
-                    <Setter Property="CornerRadius" Value="30"/>
-                </Style>
-            </Button.Resources>
-        </Button>
-        <Button x:Name="konnyu"  Background="Green" BorderThickness="2" BorderBrush="Black" FontSize="20" Content="Könnyű" Height="52" Width="176" Canvas.Left="312" Canvas.Top="242" HorizontalAlignment="Center" VerticalAlignment="Top" Click="konnyu_Click">
-            <Button.Resources>
-                <Style TargetType="{x:Type Border}">
-                    <Setter Property="CornerRadius" Value="30"/>
-                </Style>
-            </Button.Resources>
-        </Button>
-        <Button x:Name="start_btn"  Background="DarkGoldenrod" BorderThickness="2" BorderBrush="Black" FontSize="20" Content="Start" Height="52" Width="176" Click="Start_Click" HorizontalAlignment="Left" Canvas.Left="312" Canvas.Top="182" VerticalAlignment="Center">
-            <Button.Resources>
-                <Style TargetType="{x:Type Border}">
-                    <Setter Property="CornerRadius" Value="30"/>
-                </Style>
-            </Button.Resources>
-        </Button>
-        <Button x:Name="option1" Background="DarkGray" Click="option1_Click" BorderThickness="2" BorderBrush="Black" FontSize="20" Content="" Height="52" Width="176" Visibility="Hidden" Canvas.Left="169" Canvas.Top="182" HorizontalAlignment="Left" VerticalAlignment="Center">
-            <Button.Resources>
-                <Style TargetType="{x:Type Border}">
-                    <Setter Property="CornerRadius" Value="30"/>
-                </Style>
-            </Button.Resources>
-        </Button>
-        <Button x:Name="option2"  Background="DarkGray" BorderThickness="2" BorderBrush="Black" FontSize="20" Content="" Height="52" Width="176" Visibility="Hidden" Canvas.Left="455" Canvas.Top="182" HorizontalAlignment="Left" VerticalAlignment="Center" Click="option2_Click">
-            <Button.Resources>
-                <Style TargetType="{x:Type Border}">
-                    <Setter Property="CornerRadius" Value="30"/>
-                </Style>
-            </Button.Resources>
-        </Button>
-        <Button x:Name="option4" Click="option4_Click" Background="DarkGray" BorderThickness="2" BorderBrush="Black" FontSize="20" Content="" Height="52" Width="176" Visibility="Hidden" Canvas.Left="455" Canvas.Top="281" HorizontalAlignment="Center" VerticalAlignment="Top">
-            <Button.Resources>
-                <Style TargetType="{x:Type Border}">
-                    <Setter Property="CornerRadius" Value="30"/>
-                </Style>
-            </Button.Resources>
-        </Button>
-        <Button x:Name="option3"  Click="option3_Click" Background="DarkGray" BorderThickness="2" BorderBrush="Black" FontSize="20" Content="" Height="52" Width="176" Visibility="Hidden" Canvas.Left="169" Canvas.Top="281" HorizontalAlignment="Center" VerticalAlignment="Top">
-            <Button.Resources>
-                <Style TargetType="{x:Type Border}">
-                    <Setter Property="CornerRadius" Value="30"/>
-                </Style>
-            </Button.Resources>
-        </Button>
-        <Label x:Name="reply_label" Visibility="Visible" Content="" FontWeight="Black" Canvas.Left="312" Canvas.Top="149" HorizontalContentAlignment="Center" Width="176" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Button x:Name="nextpage_btn"  Background="DarkCyan" Visibility="Hidden" BorderThickness="2" BorderBrush="Black" FontSize="20" Content="Tovább" Height="52" Width="176" Click="nextpage_btn_Click" Canvas.Left="312" Canvas.Top="346" HorizontalAlignment="Center" VerticalAlignment="Top">
-            <Button.Resources>
-                <Style TargetType="{x:Type Border}">
-                    <Setter Property="CornerRadius" Value="30"/>
-                </Style>
-            </Button.Resources>
-        </Button>
-        <Label x:Name="lbl_score" Content="Pontszám: " Visibility="Hidden" HorizontalContentAlignment="Center" Canvas.Left="257" Canvas.Top="91" HorizontalAlignment="Center" VerticalAlignment="Top" Width="286" Height="53"/>
-        <Label x:Name="Game_time" Content="Játékkal töltött idő: " HorizontalContentAlignment="Center" FontSize="18" Canvas.Left="257" Canvas.Top="234" HorizontalAlignment="Center" VerticalAlignment="Center" Width="286"/>
-    </Canvas>
+	<Canvas>
+		<Label x:Name="title" Content="Üdv a kvíz játékunkban!" FontSize="35" Canvas.Top="10" Foreground="Black" Background="DarkGray" Padding="10" BorderBrush="Black" HorizontalContentAlignment="Center" Width="800"/>
+		<Button x:Name="nehez"  Background="DarkRed" BorderThickness="2" BorderBrush="Black" FontSize="20" Content="Nehéz" Height="52" Width="176" Canvas.Left="312" Canvas.Top="122" HorizontalAlignment="Center" VerticalAlignment="Top" Click="nehez_Click">
+			<Button.Resources>
+				<Style TargetType="{x:Type Border}">
+					<Setter Property="CornerRadius" Value="30"/>
+				</Style>
+			</Button.Resources>
+		</Button>
+		<Button x:Name="kozepes"  Background="Wheat" BorderThickness="2" BorderBrush="Black" FontSize="20" Content="Közepes" Height="52" Width="176" Canvas.Left="312" Canvas.Top="182" HorizontalAlignment="Center" VerticalAlignment="Top" Click="kozepes_Click">
+			<Button.Resources>
+				<Style TargetType="{x:Type Border}">
+					<Setter Property="CornerRadius" Value="30"/>
+				</Style>
+			</Button.Resources>
+		</Button>
+		<Button x:Name="konnyu"  Background="Green" BorderThickness="2" BorderBrush="Black" FontSize="20" Content="Könnyű" Height="52" Width="176" Canvas.Left="312" Canvas.Top="242" HorizontalAlignment="Center" VerticalAlignment="Top" Click="konnyu_Click">
+			<Button.Resources>
+				<Style TargetType="{x:Type Border}">
+					<Setter Property="CornerRadius" Value="30"/>
+				</Style>
+			</Button.Resources>
+		</Button>
+		<Button x:Name="start_btn"  Background="DarkGoldenrod" BorderThickness="2" BorderBrush="Black" FontSize="20" Content="Start" Height="52" Width="176" Click="Start_Click" HorizontalAlignment="Left" Canvas.Left="312" Canvas.Top="182" VerticalAlignment="Center">
+			<Button.Resources>
+				<Style TargetType="{x:Type Border}">
+					<Setter Property="CornerRadius" Value="30"/>
+				</Style>
+			</Button.Resources>
+		</Button>
+		<Button x:Name="option1" Background="DarkGray" Click="option1_Click" BorderThickness="2" BorderBrush="Black" FontSize="20" Content="" Height="52" Width="176" Visibility="Hidden" Canvas.Left="169" Canvas.Top="182" HorizontalAlignment="Left" VerticalAlignment="Center">
+			<Button.Resources>
+				<Style TargetType="{x:Type Border}">
+					<Setter Property="CornerRadius" Value="30"/>
+				</Style>
+			</Button.Resources>
+		</Button>
+		<Button x:Name="option2"  Background="DarkGray" BorderThickness="2" BorderBrush="Black" FontSize="20" Content="" Height="52" Width="176" Visibility="Hidden" Canvas.Left="455" Canvas.Top="182" HorizontalAlignment="Left" VerticalAlignment="Center" Click="option2_Click">
+			<Button.Resources>
+				<Style TargetType="{x:Type Border}">
+					<Setter Property="CornerRadius" Value="30"/>
+				</Style>
+			</Button.Resources>
+		</Button>
+		<Button x:Name="option4" Click="option4_Click" Background="DarkGray" BorderThickness="2" BorderBrush="Black" FontSize="20" Content="" Height="52" Width="176" Visibility="Hidden" Canvas.Left="455" Canvas.Top="281" HorizontalAlignment="Center" VerticalAlignment="Top">
+			<Button.Resources>
+				<Style TargetType="{x:Type Border}">
+					<Setter Property="CornerRadius" Value="30"/>
+				</Style>
+			</Button.Resources>
+		</Button>
+		<Button x:Name="option3"  Click="option3_Click" Background="DarkGray" BorderThickness="2" BorderBrush="Black" FontSize="20" Content="" Height="52" Width="176" Visibility="Hidden" Canvas.Left="169" Canvas.Top="281" HorizontalAlignment="Center" VerticalAlignment="Top">
+			<Button.Resources>
+				<Style TargetType="{x:Type Border}">
+					<Setter Property="CornerRadius" Value="30"/>
+				</Style>
+			</Button.Resources>
+		</Button>
+		<Label x:Name="reply_label" Visibility="Visible" Content="" FontWeight="Black" Canvas.Left="312" Canvas.Top="149" HorizontalContentAlignment="Center" Width="176" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+		<Button x:Name="nextpage_btn"  Background="DarkCyan" Visibility="Hidden" BorderThickness="2" BorderBrush="Black" FontSize="20" Content="Tovább" Height="52" Width="176" Click="nextpage_btn_Click" Canvas.Left="312" Canvas.Top="346" HorizontalAlignment="Center" VerticalAlignment="Top">
+			<Button.Resources>
+				<Style TargetType="{x:Type Border}">
+					<Setter Property="CornerRadius" Value="30"/>
+				</Style>
+			</Button.Resources>
+		</Button>
+		<Label x:Name="lbl_score" Content="Pontszám: " Visibility="Hidden" HorizontalContentAlignment="Center" Canvas.Left="257" Canvas.Top="91" HorizontalAlignment="Center" VerticalAlignment="Top" Width="286" Height="53"/>
+		<Label x:Name="Game_time" Visibility="Hidden" Content="Játékkal töltött idő: " HorizontalContentAlignment="Center" FontSize="18" Canvas.Left="252" Canvas.Top="300" HorizontalAlignment="Left" VerticalAlignment="Top" Width="286"/>
+	</Canvas>
 </Window>
