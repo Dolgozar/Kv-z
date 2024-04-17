@@ -691,7 +691,7 @@ namespace Dolgozat
 					if (score >= 1)
 					{
 						img.Source = new BitmapImage(new Uri("/Kepek/boldogcica.jpg", UriKind.Relative));
-					} else if(score < 1)
+					} else 
 					{
 						img.Source = new BitmapImage(new Uri("/Kepek/cica.gif", UriKind.Relative));
 					}
