@@ -8,8 +8,12 @@
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen"
         Title="Kvíz" Height="450" Width="800">
+	<Window.Background>
+		<ImageBrush ImageSource="/Kepek/bg_test.jpg" Opacity="0.4"></ImageBrush>
+	</Window.Background>
 	<Canvas>
-		<Label x:Name="title" Content="Üdv a kvíz játékunkban!" FontSize="35" Canvas.Top="10" Foreground="Black" Background="DarkGray" Padding="10" BorderBrush="Black" HorizontalContentAlignment="Center" Width="800"/>
+		<Label x:Name="title" Content="Üdv a kvíz játékunkban!" FontSize="35" Canvas.Top="10" Foreground="Black" Background="LightGray" Padding="10" BorderBrush="Black" HorizontalContentAlignment="Center" Width="800"/>
+
 		<Button x:Name="nehez"  Background="DarkRed" BorderThickness="2" BorderBrush="Black" FontSize="20" Content="Nehéz" Height="52" Width="176" Canvas.Left="312" Canvas.Top="122" HorizontalAlignment="Center" VerticalAlignment="Top" Click="nehez_Click">
 			<Button.Resources>
 				<Style TargetType="{x:Type Border}">
@@ -66,7 +70,7 @@
 				</Style>
 			</Button.Resources>
 		</Button>
-		<Label x:Name="reply_label" Visibility="Visible" Content="" FontWeight="Black" Canvas.Left="312" Canvas.Top="149" HorizontalContentAlignment="Center" Width="176" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+		<Label x:Name="reply_label" Visibility="Hidden" Content="" FontWeight="Black" Canvas.Left="312" Canvas.Top="149" HorizontalContentAlignment="Center" Width="176" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="14"/>
 		<Button x:Name="nextpage_btn"  Background="DarkCyan" Visibility="Hidden" BorderThickness="2" BorderBrush="Black" FontSize="20" Content="Tovább" Height="52" Width="176" Click="nextpage_btn_Click" Canvas.Left="312" Canvas.Top="346" HorizontalAlignment="Center" VerticalAlignment="Top">
 			<Button.Resources>
 				<Style TargetType="{x:Type Border}">
@@ -74,7 +78,8 @@
 				</Style>
 			</Button.Resources>
 		</Button>
-		<Label x:Name="lbl_score" Content="Pontszám: " Visibility="Hidden" HorizontalContentAlignment="Center" Canvas.Left="257" Canvas.Top="91" HorizontalAlignment="Center" VerticalAlignment="Top" Width="286" Height="53"/>
+		<Label x:Name="lbl_score" Content="Pontszám: " Visibility="Hidden" HorizontalContentAlignment="Center" Canvas.Left="257" Canvas.Top="91" HorizontalAlignment="Center" VerticalAlignment="Top" Width="286" Height="53" Foreground="AntiqueWhite" FontSize="14" />
 		<Label x:Name="Game_time" Visibility="Hidden" Content="Játékkal töltött idő: " HorizontalContentAlignment="Center" FontSize="18" Canvas.Left="252" Canvas.Top="300" HorizontalAlignment="Left" VerticalAlignment="Top" Width="286"/>
+		<Image x:Name="img" Visibility ="Hidden" Height="235" Canvas.Left="303" Canvas.Top="150" Width="191"/>
 	</Canvas>
 </Window>

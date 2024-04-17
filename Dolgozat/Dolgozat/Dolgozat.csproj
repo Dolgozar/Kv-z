@@ -97,5 +97,8 @@
   <ItemGroup>
     <Resource Include="Kepek\bg_test.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Kepek\cica.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
