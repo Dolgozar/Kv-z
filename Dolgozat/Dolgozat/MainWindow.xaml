@@ -9,7 +9,7 @@
         WindowStartupLocation="CenterScreen"
         Title="Kvíz" Height="450" Width="800">
 	<Window.Background>
-		<ImageBrush ImageSource="/Kepek/bg_test.jpg" Opacity="0.4"></ImageBrush>
+		<ImageBrush x:Name="buzi" ImageSource="/Kepek/bg_test.jpg" Opacity="0.4"></ImageBrush>
 	</Window.Background>
 	<Canvas>
 		<Label x:Name="title" Content="Üdv a kvíz játékunkban!" FontSize="35" Canvas.Top="10" Foreground="Black" Background="LightGray" Padding="10" BorderBrush="Black" HorizontalContentAlignment="Center" Width="800"/>

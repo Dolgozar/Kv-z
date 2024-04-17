@@ -688,7 +688,13 @@ namespace Dolgozat
 					title.Content = "Játék Vége";
 					lbl_score.FontSize = 20;
 					lbl_score.Content = "Végső pontszám: " + score;
-					img.Source = new BitmapImage(new Uri("/Kepek/cica.gif", UriKind.Relative));
+					if (score >= 1)
+					{
+						img.Source = new BitmapImage(new Uri("/Kepek/boldogcica.jpg", UriKind.Relative));
+					} else if(score < 1)
+					{
+						img.Source = new BitmapImage(new Uri("/Kepek/cica.gif", UriKind.Relative));
+					}
 					img.Visibility = Visibility.Visible;
 					hide_options();
 					break;
@@ -780,7 +786,14 @@ namespace Dolgozat
 					title.Content = "Játék Vége";
 					lbl_score.FontSize = 20;
 					lbl_score.Content = "Végső pontszám: " + score;
-					img.Source = new BitmapImage(new Uri("/Kepek/cica.gif", UriKind.Relative));
+					if (score >= 1)
+					{
+						img.Source = new BitmapImage(new Uri("/Kepek/boldogcica.jpg", UriKind.Relative));
+					}
+					else
+					{
+						img.Source = new BitmapImage(new Uri("/Kepek/cica.gif", UriKind.Relative));
+					}
 					img.Visibility = Visibility.Visible;
 					hide_options();
 					break;
@@ -875,7 +888,14 @@ namespace Dolgozat
 					lbl_score.FontSize = 20;
 					lbl_score.Content = "Végső pontszám: " + score;
 					hide_options();
-					img.Source = new BitmapImage(new Uri("/Kepek/cica.gif", UriKind.Relative));
+					if (score >= 1)
+					{
+						img.Source = new BitmapImage(new Uri("/Kepek/boldogcica.jpg", UriKind.Relative));
+					}
+					else
+					{
+						img.Source = new BitmapImage(new Uri("/Kepek/cica.gif", UriKind.Relative));
+					}
 					img.Visibility = Visibility.Visible;
 					break;
 			}

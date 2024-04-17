@@ -100,5 +100,8 @@
   <ItemGroup>
     <Resource Include="Kepek\cica.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Kepek\boldogcica.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
